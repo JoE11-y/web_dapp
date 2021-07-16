@@ -37,6 +37,7 @@ const connectCeloWallet = async function () {
       kit.defaultAccount = accounts[0]
       
       contract = new kit.web3.eth.Contract(marketplaceAbi, MPContractAddress)
+
     } catch (error) {
       notification(`⚠️ ${error}.`)
     }
